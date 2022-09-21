@@ -3,10 +3,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     display: block;
-    background-color: rgb(179, 215, 215);
-
+    background-color: rgb(188, 213, 246);
 }
-.header {
+
+nav {
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -15,18 +15,48 @@ body {
     background-color: white;
     color: grey;
 }
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%
+
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 66%
+}
+table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 66%
+}
+
 .header h1 {
     display: inline-block;
     position: relative; 
     font-size: 48px;
 }
 .header h1 .Kubiessa {
-    color:rgb(179, 215, 215)
+    color:rgb(188, 213, 246);
 }
 .menu ul {
     margin: 0;
     padding: 0;
     display: flex; 
+    flex-wrap: wrap;
+    
 }
 .menu li {
     list-style: none;
@@ -38,6 +68,26 @@ body {
     display: block; 
 }
 .menu li:hover {
-    background-color: rgb(146, 164, 178);
-    
+    background-color: grey;
+}
+.hero {
+    display: flex;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("IMG_0303.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.mugshot {
+    position: relative;
+    justify-content: center;
+    width: 100px;
+    height: 140px;
+
+}
+
+.about-me {
+
 }
