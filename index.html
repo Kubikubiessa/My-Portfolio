@@ -1,115 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kubikubiessa-Portfolio</title>
-    <link rel="stylesheet" href="./assets/reset.css"/> 
-    <link rel="stylesheet" href="./assets/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="header">
-        <h1>kubi<span class="Kubiessa">Kubiessa</span></h1>
-        <section class="menu">
-            <ul>
-                <li><a href="about-me">About Me</a></li>
-                <li><a href="work">Work</a></li>
-                <li><a href="contact-me">Contact</a></li>
-            </ul>
-        </section>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>kubi<span class="Kubiessa">Kubiessa</span></h1>
+      <div class="menu">
+        <ul>
+          <li><a href="about-me">About Me</a></li>
+          <li><a href="work">Work</a></li>
+          <li><a href="contact-me">Contact</a></li>
+        </ul>
+      </div>
+      <a href="#" class="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
     </nav>
     <main>
-        <section class="hero">
-            <img class=mugshot src="assets/IMG_8066.jpeg" alt="Image of kubiKubiessa">
+      <section class="hero">
+        <img
+          class="mugshot"
+          src="assets/IMG_8066.jpeg"
+          alt="Image of kubiKubiessa"
+        />
+      </section>
+      <section class="about-me">
+        <aside>
+          <h2>About Me</h2>
+        </aside>
+        <article>
+          <p>
+            I'm a haaappy, happy girl. I'm a happy, happy, happy girl! I'm a
+            haaappy, happy girl. I'm a happy, happy, happy girl! I'm a haaappy,
+            happy girl. I'm a happy, happy, happy girl! I'm a haaappy, happy
+            girl. I'm a happy, happy, happy girl! I'm a haaappy, happy girl. I'm
+            a happy, happy, happy girl! I'm a haaappy, happy girl. I'm a happy,
+            happy, happy girl! I'm a haaappy, happy girl. I'm a happy, happy,
+            happy girl! I'm a haaappy, happy girl. I'm a happy, happy, happy
+            girl!
+          </p>
+        </article>
+      </section>
+      <section class="work">
+        <aside>
+          <h2>Work</h2>
+        </aside>
+       <section class="best-work">
+          <a class="large" href="https://kubikubiessa.github.io/Challenge-1-refactoring-/">
+            <h3>Refactoring</h3>
+            <img
+              id="refactoring"
+              alt="multi-colored lego blocks"
+              src="./assets/cash-macanaya-0MHs6X1LlVo-unsplash.jpg"
+            />
+          </a>
         </section>
-        <section class="about-me">
-            <aside>
-                <h2>About Me</h2>
-            </aside>
-            <article id="text-about-me">
-                <p>I'm a haaappy, happy girl. I'm a happy, happy, happy girl!
-                    I'm a haaappy, happy girl. I'm a happy, happy, happy girl!
-                    I'm a haaappy, happy girl. I'm a happy, happy, happy girl!
-                    I'm a haaappy, happy girl. I'm a happy, happy, happy girl!
-                    I'm a haaappy, happy girl. I'm a happy, happy, happy girl!
-                    I'm a haaappy, happy girl. I'm a happy, happy, happy girl!
-                    I'm a haaappy, happy girl. I'm a happy, happy, happy girl!
-                    I'm a haaappy, happy girl. I'm a happy, happy, happy girl!
-                </p>
-            </article>
         </section>
-        <section class="work">
-            <aside>
-                <h2>Work</h2>
-            </aside>
-            <table id="image-tiles">
-                <card id="project1">
-                    <h3>Project 1</h3>
-                    <a href="https://www.amazon.com">
-                        <img border="0" alt="" src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg" width="100" height="100">
-                    </a>
-                </card>
-                <card id="project2">
-                    <h3>Project 2</h3>
-                    <a href="https://www.amazon.com">
-                        <img border="0" alt="" src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg" width="100" height="100">
-                        </a>
-                </card>
-                <card id="project3">
-                    <h3>Project 3</h3>
-                    <a href="https://www.amazon.com">
-                        <img border="0" alt="" src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg" width="100" height="100">
-                        </a>
-                </card>
-                <card id="project4">
-                    <h3>Project 4</h3>
-                    <a href="https://www.amazon.com">
-                        <img border="0" alt="" src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg" width="100" height="100">
-                        </a>
-                </card>
-                <card id="project5">
-                    <h3>Project 5</h3>
-                    <a href="https://www.amazon.com">
-                        <img border="0" alt="" src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg" width="100" height="100">
-                        </a>
-                </card>
-                <card id="project6">
-                    <h3>Project 6</h3>
-                    <a href="https://www.amazon.com">
-                        <img border="0" alt="" src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg" width="100" height="100">
-                        </a>
-                </card>
-                <card id="project7">
-                    <h3>Project 7</h3>
-                    <a href="https://www.amazon.com">
-                        <img border="0" alt="" src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg" width="100" height="100">
-                        </a>
-                </card>
-                                
-            </table>
+          <section class="grid">
+          <a href="https://www.amazon.com">
+            <h3>Project 2</h3>
+            <img
+              alt=""
+              src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg"
+              alt=""
+              src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg"
+            />
+          </a>
 
+          <a href="https://www.amazon.com">
+            <h3>Project 4</h3>
+            <img
+              alt=""
+              src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg"
+               
+            />
+          </a>
+
+          <a href="https://www.amazon.com">
+            <h3>Project 5</h3>
+            <img
+              alt=""
+              src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg"
+               
+            />
+          </a>
+
+          <a href="https://www.amazon.com">
+            <h3>Project 6</h3>
+            <img
+              alt=""
+              src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg"
+               
+            />
+          </a>
+
+          <a href="https://www.amazon.com">
+            <h3>Project 7</h3>
+            <img
+              alt=""
+              src="./assets/kelly-sikkema-OYQ6apQXOS8-unsplash.jpg"
+               
+            />
+          </a>
         </section>
-        
+      </section>
     </main>
     <section class="footer">
-            <aside>
-                <h2>Contact Me</h2>
-            </aside>
-            <section id="contact-me">
-                <div id="phone">
-                    <a href="tel:+4733378901">+47 333 78 901</a>
-                </div>
-                <div id="email">
-                    <a href="mailto:kubikubiessa@gmail.com">Send email</a>
-                </div>
-                <div id="linkedin">
-                    <a href="https://www.linkedin.com/in/heidrun-kubiessa-ph-d-98110324a/" target="_blank">My LinkedIn</a>
-                </div>
-        </section>
+      <aside>
+        <h2>Contact Me</h2>
+      </aside>
+      <section id="contact-me">
+        <div id="phone">
+          <a href="tel:99999999999">9999999999</a>
+        </div>
+        <div id="email">
+          <a href="mailto:kubikubiessa@gmail.com">Send email</a>
+        </div>
+        <div id="linkedin">
+          <a
+            href="https://www.linkedin.com/in/heidrun-kubiessa-ph-d-98110324a/"
+            target="_blank"
+            >My LinkedIn</a
+          >
+        </div>
+      </section>
     </section>
-</body>
+  </body>
 </html>

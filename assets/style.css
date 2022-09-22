@@ -1,62 +1,42 @@
-:root {}
+:root {
+    --main-background:  rgb(188, 213, 246);
+}
 body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     display: block;
-    background-color: rgb(188, 213, 246);
+    background-color: var(--main-background);
 }
 
 nav {
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     color: grey;
 }
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%
-}
-
-aside {
-    display: flex;
-    flex-wrap: wrap;
-    width: 33%
-
-}
-article {
-    display: flex;
-    flex-wrap: wrap;
-    width: 66%
-}
-table {
-    display: flex;
-    flex-wrap: wrap;
-    width: 66%
-}
-
-.header h1 {
+nav h1 {
     display: inline-block;
-    position: relative; 
-    font-size: 48px;
+    position: relative;
+    margin-left: 5px;
+    font-size: 50px;
 }
-.header h1 .Kubiessa {
-    color:rgb(188, 213, 246);
+nav h1 .Kubiessa {
+    color: var(--main-background);
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
 }
 .menu ul {
     margin: 0;
     padding: 0;
     display: flex; 
     flex-wrap: wrap;
-    
 }
 .menu li {
     list-style: none;
@@ -70,11 +50,29 @@ table {
 .menu li:hover {
     background-color: grey;
 }
+.toggle {
+    display: none; /* appears upon media query, see below */ 
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+}
 .hero {
     display: flex;
-    height: 450px;
+    height: 100%;
     width: 100%;
-    margin-bottom: 25px;
     background-image: url("IMG_0303.jpeg");
     background-size: cover;
     background-position: center;
@@ -87,7 +85,147 @@ table {
     height: 140px;
 
 }
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.about-me {
+section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(170, 157, 172);
+}
 
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 25%;
+    background-color: white;
+}
+aside h2 {
+    font-size: 2rem;
+    margin: 10px;
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding: 15px; 
+}
+.best-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    padding: 15px;
+    background-color: grey;
+}
+
+#refactoring {
+    display: flex;
+    width: 60%;
+    height: 50%;
+    align-self: center; 
+}
+
+#refactoring:hover {
+    width: 60%;
+    height: 60%;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-end;
+    width: 75%;
+    padding: 15px;
+    background-color: grey;
+}
+
+.grid a img {
+    width: 120px;
+    height: 100px;
+}
+.grid a img:hover {
+    width: 130px;
+    height: 110px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+    height: 40px;
+    position: relative;
+}
+ 
+
+#contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%; 
+}
+
+#contact-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px; 
+}
+#contact-me div {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-wrap: wrap;
+    list-style: none;
+}
+#contact-me div a {
+    text-decoration: none;
+    color: rgb(51, 50, 50);
+    padding: 1rem; 
+    display: block; 
+}
+
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    nav {
+        flex-direction: flex-start;
+    }
+    .toggle {
+        display: flex;
+    }
+    .menu {
+        display: none; 
+    }
+    .menu ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu ul li {
+        text-align: center;
+    }
+    .menu li a {
+        padding: .5rem 1rem;
+    }
+    .menu:active {
+        display: flex;
+    }
+    nav {
+      background: #1a2049;s
+    }
+    .footer {
+      background-color: white; 
+    }
 }
