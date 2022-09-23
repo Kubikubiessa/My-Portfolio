@@ -88,70 +88,115 @@ nav h1 .Kubiessa {
 main {
     display: flex;
     flex-wrap: wrap;
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    height: 100%;
-    background-color: rgb(170, 157, 172);
 }
+div {
+    display: flex;
+}
+ .about-me {
+    display: flex;
+    width: 100%;
+ }
 
-aside {
+.aside-left1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: column;
     width: 25%;
     background-color: white;
 }
-aside h2 {
-    font-size: 2rem;
-    margin: 10px;
-}
-article {
+
+.article {
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     width: 75%;
-    padding: 15px; 
+}
+p {
+    display: flex; 
+    margin: 15px;
+}
+h2 {
+    display: flex;
+    font-size: 2rem;
+    margin: 10px;
+    align-self: flex-start;
+    color: grey;
+
+}
+
+.work {
+    display: flex;
+    width: 100%;
+}
+
+.aside-left2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: auto;
+    background-color: white;
+}
+.right-aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 75%;
 }
 .best-work {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: space-around;
-    width: 75%;
-    padding: 15px;
     background-color: grey;
+}
+.large {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+    margin-left: 100%;
+    margin-right: 100%;
 }
 
 #refactoring {
     display: flex;
-    width: 60%;
-    height: 50%;
-    align-self: center; 
+    flex-wrap: wrap;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+
+   
 }
 
 #refactoring:hover {
-    width: 60%;
-    height: 60%;
+    width: 350px;
+    height: 350px;
 }
 .grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-self: flex-end;
-    width: 75%;
-    padding: 15px;
+    
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: grey;
 }
 
-.grid a img {
-    width: 120px;
+.grid a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.grid img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100px;
     height: 100px;
 }
+
 .grid a img:hover {
     width: 130px;
     height: 110px;
@@ -159,16 +204,29 @@ article {
 
 h3 {
     font-size: 1.2rem;
-    padding: 10px;
+    padding: 5px;
     color: white;
     height: 40px;
     position: relative;
+    text-decoration: none;
 }
  
+.footer {
+    display: flex;
+    width: 100%;
+}
 
+.left-aside3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: auto;
+    background-color: white;
+}
 #contact-me {
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     width: 75%; 
 }
 
@@ -199,6 +257,9 @@ h3 {
     main,
     nav {
       flex-direction: column;
+    }
+    .grid a {
+        flex-direction: column; 
     }
     nav {
         flex-direction: flex-start;
