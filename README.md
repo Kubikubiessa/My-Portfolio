@@ -1,5 +1,4 @@
 # my-portfolio
-# my-portfolio
 ## Description
 In this repo, I created a portfolio of work given the acctepance criteria below. While the repo is currently meant as parctice, what I learned here will apply to a future portfolio version that will showcase my skills and talents to potential employers looking to fill a postion in web development. I practiced to highlight my strongest work as well as the thought processes behind it by creating links to the work's web application. My goal was to create a responsive web application that will nicely adjust its layout to various viewports and still be well-funtioning and look aestheically pleasing.
 The portfilio includes a header with my name, a navbar linking the about, work, and contact-me sections of the page. The navbar is followed by a hero banner, which includes a picture of me and my future professional title. The work section highlights my most important work followed by other projects. Upon hover, the images enlarge and when clicked they connect to the existing web applications of mine. The links in the contact-me section lead to the respoective form of contact: phone, email, LinkedIn. 
