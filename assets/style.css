@@ -162,6 +162,9 @@ h2 {
     flex: 1;
     width: 75%;
 }
+.right-aside a {
+    text-decoration: none;
+}
 .best-work {
     display: flex;
     flex-wrap: wrap;
